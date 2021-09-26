@@ -18,7 +18,7 @@ API
 3.
 
 
-DEPLOYMENT
+DEPLOYMENT ( การทำ Image เพื่ออัพโหลดขึ้น Cloud )
 
 Docker :
 image name : softent1
@@ -26,3 +26,15 @@ image name : softent1
 command :
 1. docker built -t softent1 .
 2. docker run -d --restart=always -p 80:80 -t softent1
+
+
+Version Controll ( การอัพเดทงานขึ้น Github )
+
+1.git init
+
+2.git commit -m "Your comment"
+Ex. git commit -m "add auth.py"
+
+3.git remote add origin <Link to GitHub Repo>
+
+4.git push -u origin master 
