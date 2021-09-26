@@ -34,6 +34,11 @@ Version Controll ( การอัพเดทงานขึ้น Github )
 
 2.git commit -m "Your comment"
 Ex. git commit -m "add auth.py"
+#เพิ่มเติม
+เมื่อไฟล์ถูกเปลี่ยนแปลง จะเด้งไฟล์ขึ้นใน Change
+เราสามารถเพิ่ม กดเพิ่ม stage จาก change 
+เมื่อเลือก stage ที่ต้องการจนครบทุกตัว ก็จะทำการ commit
+Changes > staged > commit
 
 3.git remote add origin <Link to GitHub Repo>
 
