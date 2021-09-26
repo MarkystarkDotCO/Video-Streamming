@@ -3,32 +3,54 @@ File Structure
         -app
            -api 
            -auth (หน้า Login)
+               -static 
+                     -js
+                     -src (image/ vdo)
+                     -styles
+               -templates (html)
+               -auth.py
            -main (หน้าหลัก)
+               -static 
+                     -js
+                     -src(image/ vdo)
+                     -styles
+               -templates (html)
+               -main.py
            -payment (หน้าชำระเงิน)
+               -static 
+                     -js
+                     -src(image/ vdo)
+                     -styles
+               -templates (html)
+               -payment.py
            -register (หน้าสมัครสมาชิก)
+               -static 
+                     -js
+                     -src(image/ vdo)
+                     -styles
+               -templates (html)
+               -register.py
            -vplayer (หน้าเล่นวิดีโอ)
+               -static 
+                     -js
+                     -src(image/ vdo)
+                     -styles
+               -templates (html)
+               -vplayer.py       
         -Dockerfile
         -readme.txt
 
-
-
 @DEVELOPMENT
 
-prerequirements 
+Pre requirements 
 1.ติดตั้ง python 3.6 ขึ้นไป
 2.ติดตั้ง pip
 3.ติดตั้ง flask
 // การติดตั้ง flask อาจจะไม่ได้ติดบางแพ็คเกจมาให้ เช่น Blueprint ซึ่งอาจต้องติดตั้งอีกทีแนะนำใช้ pip
 
-วิธีรัน :
-1.เปิด Terminal (path > webstream/app)
+How to run :
+1.เปิด Terminal (user/webstream/app)
 2.พิมพ์ python app.py
-
-@API
-1.write customer table 
-2.read customer table
-3.
-
 
 @DEPLOYMENT ( การทำ Image เพื่ออัพโหลดขึ้น Cloud )
 
@@ -55,4 +77,21 @@ Changes > staged > commit
 
 3.git remote add origin <Link to GitHub Repo>
 
-4.git push -u origin master 
+4.git push -u origin master
+
+#เพิ่มเติม
+โปรเจคมีทั้งหมด 6 branch (6 modules)
+1.master เป็นตัวที่จะ Deploy ขึ้นระบบ
+2.auth
+3.main
+4.payment
+5.register
+6.vplayer
+
+ตอน push ขึ้น git ต้องใส่ parameter ตาม branch ที่ทำ 
+Ex.
+ฟังก์ชันชำระเงิน payment
+git push -u origin payment
+
+ฟังก์ชันสมัครสมาชิก register
+git push -u origin register

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background: #000000;
+}
+
+.content {
+  max-width: 400px;
+  margin: auto;
+  background: #FFFFFF;
+  padding: 10px;
+  flood-color: aliceblue;
+}
+
+h1{
+    color: rgb(4, 90, 165);
+    font-size: 72px;
+    text-align: center;
+    font-family: 'Sarina', cursive;
+}
+
+p{
+    color:rgb(4, 90, 165);
+    text-align: center;
+    font-family: 'Sarina', cursive;
+}
+h2{
+    color:#3752E0;
+    text-align: center;
+    font-family: 'Sarina', cursive;
+}
+input[type=text], select {
+  font-size: large;
+  font-family: 'Sarina', cursive;
+  width: 300px;
+  background-color:transparent;
+  padding: 12px 24px;
+  margin: 8px 0;
+  display: inline-block;
+  /*border: 1px solid transparent; */
+  border-radius: 30px;
+  box-sizing: border-box;
+  border-color: #3752E0;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+input[type=submit] {
+  font-size: medium;
+  font-family: 'Sarina', cursive;
+  width: 200px;
+  /*background-color:transparent;*/
+  color: rgb(0, 0, 0);
+  padding: 14px 14px;
+  /*margin: 4px 0;*/
+ /* border: none; */
+  border-color:#0A9F4E;
+  border-radius: 30px;
+  /*cursor: pointer;*/
+  margin-left: 25%;
+  margin-top: 40px;
+}
+
+input[type=submit]:hover {
+  background-color: #d1d2f5;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: transparent;
+  margin-top: 200px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+
+</style>
+</head>
+<body>
+
+<div class="content">
+  <h1>LOGIN</h1>
+  <p>Please enter your username and password</p>
+
+  <div>
+    <form action="/action_page.php">
+      <label for="fname"></label>
+      <input type="text" id="fname" name="firstname" placeholder="username">
+  
+      <label for="lname"></label>
+      <input type="text" id="lname" name="lastname" placeholder="password">
+    
+      <input type="submit" value="Login">
+    </form>
+  
+</div>
+<div class="footer">
+    <h2>Web Streaming</h2>
+  </div>
+
+</body>
+</html>
