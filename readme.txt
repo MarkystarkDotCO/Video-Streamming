@@ -53,4 +53,4 @@ git push -u origin payment
 
 ฟังก์ชันสมัครสมาชิก register
 git push -u origin register
-push testing
+
