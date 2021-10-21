@@ -4,7 +4,7 @@ from auth.auth import auth_bp
 from api.api import api_bp
 from payment.payment import payment_bp
 from main.main import main_bp
-import psycopg2
+
 
 app = Flask(__name__)
 #app.register_blueprint(example_blueprint)
