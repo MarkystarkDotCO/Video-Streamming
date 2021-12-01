@@ -14,6 +14,28 @@ def index():
                               'Trusted_Connection=yes;')
 
         cursor = conn.cursor()
-        cursor.execute('SELECT Url FROM Description')
-        data=cursor.fetchall()
-        return render_template('home.html',data=data)
+        
+        cursor.execute('SELECT TOP 1 * FROM Description order by NEWID()')
+        BgImg=cursor.fetchone()
+        
+       #poppulation
+        cursor.execute('SELECT TOP 4 * FROM Description order by NEWID()')
+        pop1=cursor.fetchall()
+        
+        cursor.execute('SELECT TOP 4 * FROM Description order by NEWID()')
+        pop2=cursor.fetchall()
+        
+        cursor.execute('SELECT TOP 4 * FROM Description order by NEWID()')
+        pop3=cursor.fetchall()
+        
+        #Action
+        cursor.execute('SELECT TOP 4 * FROM Description order by NEWID()')
+        act1=cursor.fetchall()
+        
+        cursor.execute('SELECT TOP 4 * FROM Description order by NEWID()')
+        act2=cursor.fetchall()
+        
+        cursor.execute('SELECT TOP 4 * FROM Description order by NEWID()')
+        act3=cursor.fetchall()
+     
+        return render_template('homes.html',BgImg=BgImg,pop=pop1,pop2=pop2,pop3=pop3,act1=act1,act2=act2,act3=act3)
